@@ -1,0 +1,73 @@
+/* hub 42.3 */
+#define SOCKETS 1
+#define PINS_PER_SOCKET 4
+#define RX_PIN_COUNT 4
+static struct pin_data rx_pin_table[RX_PIN_COUNT] =
+{
+	{ &DDRB, &PORTB, &PINB, PB2 }, //  0
+	{ &DDRB, &PORTB, &PINB, PB3 }, //  1
+	{ &DDRB, &PORTB, &PINB, PB6 }, //  2
+	{ &DDRB, &PORTB, &PINB, PB7 }  //  3
+};
+
+/* hub 69.8 */
+#define SOCKETS 2
+#define PINS_PER_SOCKET 4
+#define RX_PIN_COUNT 8
+static struct pin_data rx_pin_table[RX_PIN_COUNT] =
+{
+	{ &DDRB, &PORTB, &PINB, PB0 }, //  0
+	{ &DDRB, &PORTB, &PINB, PB1 }, //  1
+	{ &DDRB, &PORTB, &PINB, PB2 }, //  2
+	{ &DDRB, &PORTB, &PINB, PB6 }, //  3
+	{ &DDRC, &PORTC, &PINC, PC0 }, //  4
+	{ &DDRC, &PORTC, &PINC, PC1 }, //  5
+	{ &DDRC, &PORTC, &PINC, PC2 }, //  6
+	{ &DDRC, &PORTC, &PINC, PC3 }  //  7
+};
+
+/* hub 17.4 */
+#define SOCKETS 3
+#define PINS_PER_SOCKET 4
+#define RX_PIN_COUNT 12
+static struct pin_data rx_pin_table[RX_PIN_COUNT] =
+{
+	{ &DDRB, &PORTB, &PINB, PB0 }, //  0
+	{ &DDRB, &PORTB, &PINB, PB1 }, //  1
+	{ &DDRB, &PORTB, &PINB, PB2 }, //  2
+	{ &DDRB, &PORTB, &PINB, PB6 }, //  3
+	{ &DDRC, &PORTC, &PINC, PC0 }, //  4
+	{ &DDRC, &PORTC, &PINC, PC1 }, //  5
+	{ &DDRC, &PORTC, &PINC, PC2 }, //  6
+	{ &DDRC, &PORTC, &PINC, PC3 }, //  7
+	{ &DDRD, &PORTD, &PIND, PD2 }, //  8
+	{ &DDRD, &PORTD, &PIND, PD3 }, //  9
+	{ &DDRD, &PORTD, &PIND, PD4 }, // 10
+	{ &DDRD, &PORTD, &PIND, PD5 }  // 11
+};
+
+/* hub 88.1 */
+#define SOCKETS 4
+#define PINS_PER_SOCKET 4
+#define RX_PIN_COUNT 16
+static struct pin_data rx_pin_table[RX_PIN_COUNT] =
+{
+	{ &DDRB, &PORTB, &PINB, PB2 }, //  0
+	{ &DDRB, &PORTB, &PINB, PB3 }, //  1
+	{ &DDRB, &PORTB, &PINB, PB6 }, //  2
+	{ &DDRB, &PORTB, &PINB, PB7 }, //  3
+	{ &DDRC, &PORTC, &PINC, PC0 }, //  4
+	{ &DDRC, &PORTC, &PINC, PC1 }, //  5
+	{ &DDRC, &PORTC, &PINC, PC4 }, //  6
+	{ &DDRC, &PORTC, &PINC, PC5 }, //  7
+	{ &DDRB, &PORTB, &PINB, PB0 }, //  8
+	{ &DDRB, &PORTB, &PINB, PB1 }, //  9
+	{ &DDRD, &PORTD, &PIND, PD4 }, // 10
+	{ &DDRD, &PORTD, &PIND, PD5 }, // 11
+	{ &DDRD, &PORTD, &PIND, PD2 }, // 12
+	{ &DDRD, &PORTD, &PIND, PD3 }, // 13
+	{ &DDRD, &PORTD, &PIND, PD6 }, // 14
+	{ &DDRD, &PORTD, &PIND, PD7 }  // 15
+};
+
+
